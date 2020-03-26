@@ -33,6 +33,11 @@
                         <use xlink:href="img/sprite.svg#logo"></use>
                     </svg>
                 </a>
+                <!--                remove this script in production-->
+                <script>
+                    let logo = document.getElementsByClassName('logo');
+                    logo[0].setAttribute('href', window.location.href);
+                </script>
             </div>
             <nav class="col-auto d-none d-xl-block mr-3">
                 <ul class="row align-items-center">
