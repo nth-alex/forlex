@@ -1,0 +1,92 @@
+html
+    line-height: 1.4
+
+body
+    background: #fff
+    font: 14px/1.4 'Montserrat', sans-serif
+    overflow-x: hidden
+    color: #434242
+
+
+.svgicon
+    width: 1em
+    height: 1em
+    position: relative
+    top: .125em
+
+svg
+    fill: currentColor
+
+*
+    outline: none
+    -webkit-tap-highlight-color: transparent
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+input[placeholder]
+    text-overflow: ellipsis
+
+input::-moz-placeholder
+    text-overflow: ellipsis
+
+input:-moz-placeholder
+    text-overflow: ellipsis
+
+input:-ms-input-placeholder
+    text-overflow: ellipsis
+
+input,
+textarea
+
+    &::-webkit-input-placeholder
+        transition: all .3s
+        opacity: 1
+
+    &:focus::-webkit-input-placeholder
+        transform: translateX(-10px)
+        opacity: 0
+
+p
+    margin: 0 0 1em
+    color: $p_color
+    line-height: 1.8
+
++scut-reset(semanticize paragraph)
+
+ul
+    padding: 0
+    margin: 0
+    list-style: none
+
+article
+    ul
+        margin: 20px 0 20px 20px
+
+        > li
+            position: relative
+            padding-left: 15px
+            color: $p_color
+
+            &:before
+                content: ""
+                position: absolute
+                width: 6px
+                height: 6px
+                left: 0
+                top: calc(50% - 3px)
+                background: $p_color
+
+em
+    font-style: italic
+
+a
+    border: 0
+    color: $link_color
+    text-decoration: none
+
+svg
+    fill: currentColor
+
+.container
+    +min(1200)
+        max-width: 1400px

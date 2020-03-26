@@ -1,0 +1,131 @@
+#modal-login,
+#modal-register {
+    position: relative;
+    background: #FFF;
+    width: auto;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+#modal-register {
+    padding: 15px 15px 30px;
+
+    @include min(576) {
+        padding: 30px;
+    }
+
+    @include min(992) {
+        padding: 34px 60px;
+        height: 646px;
+    }
+
+    .form-item {
+        margin-bottom: 30px;
+    }
+
+    .auth-social {
+        margin-bottom: 20px;
+    }
+
+    .sms-warning {
+        line-height: 17px;
+        margin: 30px 0;
+
+        @include min(768) {
+            margin: 60px 0 39px;
+        }
+    }
+
+    .button-code {
+        width: 100%;
+
+        @include min(768) {
+            margin-top: 23px;
+        }
+    }
+}
+
+.login-screen-left {
+    background: linear-gradient(281.36deg, #2DC09D 10.79%, #0F928A 74.63%);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    padding: 30px 15px;
+    position: relative;
+
+    @include min(992) {
+        height: 646px;
+    }
+
+    @include min(1200) {
+        width: 435px;
+    }
+
+    .f-dots {
+        position: absolute;
+        left: 75px;
+        bottom: 23px;
+
+        @include max(992) {
+            display: none;
+        }
+    }
+    .auth-square {
+        position: absolute;
+        left: 2px;
+        bottom: 128px;
+        width: 114px;
+        height: 103px;
+        background: rgba(77, 217, 175, 0.15);
+        border-radius: 17px;
+
+        @include max(992) {
+            display: none;
+        }
+    }
+
+    .title-5 {
+        font-size: 20px;
+        margin-bottom: 30px;
+
+        @include min(992) {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.login-screen-right {
+    height: 100%;
+    display: flex;
+    padding: 30px 15px;
+
+    .m-auto {
+        max-width: 349px;
+        width: 100%;
+    }
+
+    .auth-social {
+        margin-bottom: 30px;
+
+        @include min(992) {
+            margin-bottom: 60px;
+        }
+    }
+
+    .link-red {
+        position: relative;
+        display: inline-block;
+        margin-top: 15px;
+
+        @include min(992) {
+            bottom: -80px;
+        }
+    }
+}
+
+#modal-resend {
+    .text-center {
+        max-width: 389px;
+        margin: auto;
+    }
+}

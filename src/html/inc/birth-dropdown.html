@@ -1,0 +1,36 @@
+<label>Дата рождения</label>
+<div class="row">
+    <div class="col-auto pr-0">
+        <select class="select-1" id="dummy-days"></select>
+        <script>
+            for (let i = 1; i <= 31; i++) {
+                let optionNode = document.createElement('option');
+                let textNode = document.createTextNode(''+i);
+                optionNode.appendChild(textNode);
+                document.getElementById('dummy-days').appendChild(optionNode);
+            }
+        </script>
+    </div>
+    <div class="col-auto pr-0">
+        <select class="select-1" id="dummy-months"></select>
+        <script>
+            for (let i = 1; i <= 12; i++) {
+                let optionNode = document.createElement('option');
+                let textNode = document.createTextNode(''+i);
+                optionNode.appendChild(textNode);
+                document.getElementById('dummy-months').appendChild(optionNode);
+            }
+        </script>
+    </div>
+    <div class="col-auto">
+        <select class="select-1 select-years" id="dummy-years"></select>
+        <script>
+            for (let i = 0; i < 100; i++) {
+                let optionNode = document.createElement('option');
+                let textNode = document.createTextNode(''+(new Date().getFullYear()-i));
+                optionNode.appendChild(textNode);
+                document.getElementById('dummy-years').appendChild(optionNode);
+            }
+        </script>
+    </div>
+</div>

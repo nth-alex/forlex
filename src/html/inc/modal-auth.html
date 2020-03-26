@@ -1,0 +1,158 @@
+<div id="modal-register" class="window-popup mfp-hide">
+    <div class="tabs">
+        <div class="d-flex mb-4">
+            <a href="#panel-user" class="tabs__tab tab-button-1 active">Зарегистрироваться пользователем</a>
+            <a href="#panel-partner" class="tabs__tab tab-button-1">Зарегистрироваться партнером</a>
+        </div>
+        <div class="tab-content active" id="panel-user">
+            <form class="empty-check">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 px-2 px-lg-4">
+                            <div class="form-item">
+                                <label>Имя</label>
+                                <input type="text" class="form-input">
+                            </div>
+                            <div class="form-item">
+                                <label>Пароль</label>
+                                <div class="password-item">
+                                    <input type="password" class="form-input">
+                                    <svg class="svgicon toggle-icon">
+                                        <use xlink:href="img/sprite.svg#eye-hide"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label>Повторите пароль</label>
+                                <div class="password-item">
+                                    <input type="password" class="form-input">
+                                    <svg class="svgicon toggle-icon">
+                                        <use xlink:href="img/sprite.svg#eye-hide"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 px-2 px-lg-4">
+                            <div class="form-item">
+                                @include("birth-dropdown.html")
+                            </div>
+                            <div class="form-item">
+                                <label>Ваш E-mail</label>
+                                <input type="email" class="form-input">
+                            </div>
+                            <div class="form-item">
+                                <label>Номер телефона</label>
+                                <input type="text" class="form-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="fz-16 text-cyan text-center">Вы можете войти через социальные сети:</p>
+                @include("auth-social.html")
+                <div class="text-center">
+                    <button type="submit" disabled="disabled" class="button-3 mt-2">Зареєструватися
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="tab-content" id="panel-partner">
+            <form class="empty-check">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 px-2 px-lg-4">
+                            <div class="form-item">
+                                <label>E-mail</label>
+                                <input type="email" class="form-input">
+                            </div>
+                            <div class="form-item">
+                                <label>Пароль</label>
+                                <div class="password-item">
+                                    <input type="password" class="form-input">
+                                    <svg class="svgicon toggle-icon">
+                                        <use xlink:href="img/sprite.svg#eye-hide"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label>Повторите пароль</label>
+                                <div class="password-item">
+                                    <input type="password" class="form-input">
+                                    <svg class="svgicon toggle-icon">
+                                        <use xlink:href="img/sprite.svg#eye-hide"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label>Имя</label>
+                                <input type="text" class="form-input">
+                            </div>
+                        </div>
+                        <div class="col-md-6 px-2 px-lg-4">
+                            <div class="form-item">
+                                <label>Номер телефона</label>
+                                <input type="text" class="form-input">
+                            </div>
+                            <button type="button" class="button-4 button-code">Получить код</button>
+                            <p class="sms-warning">Для окончания регистрации вам нужно ввести код, высланный
+                                Вам на мобильный телефон</p>
+                            <div class="form-item">
+                                <label>Код</label>
+                                <input type="text" class="form-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" disabled="disabled" class="button-3 mt-2">Зареєструватися
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="modal-resend" class="window-popup mfp-hide">
+    <div class="text-center">
+        <div class="title-2 text-cyan mb-3">Востановить пароль</div>
+        <form class="empty-check">
+            <div class="form-item">
+                <label>Введите ваш email</label>
+                <input type="email" class="form-input">
+            </div>
+            <button type="submit" disabled="disabled" class="button-3 px-5 mt-3">Надіслати</button>
+        </form>
+    </div>
+</div>
+<div id="modal-login" class="mfp-hide">
+    <div class="row no-gutters">
+        <div class="col-lg-4 col-xl-auto">
+            <div class="login-screen-left">
+                <div class="auth-square"></div>
+                <img src="img/dots.png" alt="dots" class="f-dots">
+                <div class="m-auto pb-lg-7">
+                    <div class="title-5">Пройдіть авторизацію</div>
+                    <a href="#modal-register" class="button-1 open-modal">Зареєструватися</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-xl">
+            <div class="login-screen-right text-center">
+                <div class="m-auto">
+                    <p class="fz-16 text-cyan">Вы можете войти через социальные сети:</p>
+                    @include("auth-social.html")
+                    <form action="/home-logged.html">
+                        <div class="form-item">
+                            <label>E-mail</label>
+                            <input type="email" class="form-input">
+                        </div>
+                        <div class="form-item">
+                            <label>Пароль</label>
+                            <input type="password" class="form-input">
+                        </div>
+                        <button class="button-3 px-4 mt-3">Авторизация</button>
+                    </form>
+                    <a href="#modal-resend" class="link-red open-modal">Забыли пароль?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

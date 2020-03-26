@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="228x228" href="img/favicons/coast-228x228.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <style media="screen">
+        .preload * {
+            transition: none !important
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>High Risk</title>
+    <!--[if lt IE 10]>
+    <script>
+        window.open('https://browser-update.org/uk/update-browser.html', '_self');
+    </script>
+    <![endif]-->
+</head>
+<body class="">
+<header id="header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-auto mr-auto mr-xl-0">
+                <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
+            </div>
+            <nav class="col-auto m-auto d-none d-xl-block">
+                <ul class="row align-items-center">
+                    <li class="col-auto">
+                        <a href="#" class="menu-item">HIGH RISK</a>
+                    </li>
+                    <li class="col-auto">
+                        <a href="#" class="menu-item">СЕРВИСЫ</a>
+                    </li>
+                    <li class="col-auto">
+                        <a href="#" class="menu-item">ТОКЕНИЗАЦИЯ</a>
+                    </li>
+                    <li class="col-auto">
+                        <a href="#" class="menu-item">ПРЕИМУЩЕСТВА</a>
+                    </li>
+                    <li class="col-auto">
+                        <a href="#" class="menu-item">КОНТАКТЫ</a>
+                    </li>
+                    <li class="col-auto">
+                        <a href="#" class="menu-item">ПОДКЛЮЧИТЬ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-auto px-0 px-xl-2">
+                <div class="header-user">
+                    <div class="user-icon">
+                        <svg class="svgicon">
+                            <use xlink:href="img/sprite.svg#user"></use>
+                        </svg>
+                    </div>
+                    <div class="header-user__menu">
+                        <a href="/profile.html" class="header-user__link">
+                            <svg class="svgicon">
+                                <use xlink:href="img/sprite.svg#user"></use>
+                            </svg>
+                            Настройки профиля
+                        </a>
+                        <a href="/request-form.html" class="header-user__link">
+                            <svg class="svgicon">
+                                <use xlink:href="img/sprite.svg#document"></use>
+                            </svg>
+                            Мои заявки
+                        </a>
+                        <button class="header-user__link">
+                            <svg class="svgicon">
+                                <use xlink:href="img/sprite.svg#exit"></use>
+                            </svg>
+                            Выйти
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto d-xl-none">
+                <button class="hamburger hamburger--spin" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+            </div>
+            <div class="col-auto d-none d-xl-block p-0">
+                <div class="dd">
+                    <div class="dd__current">RU
+                        <svg class="svgicon">
+                            <use xlink:href="img/sprite.svg#angle-down"></use>
+                        </svg>
+                    </div>
+                    <div class="dd__list">
+                        <a href="#">UK</a>
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="container">
+    <div class="card-2 my-5">
+        <div class="row no-gutters">
+            <div class="col-lg-auto">
+                <div class="profile-navigation d-flex flex-column">
+    <div class="row no-gutters align-items-center">
+        <div class="col-lg-auto">
+            <div class="user-icon">
+                <svg class="svgicon">
+                    <use xlink:href="img/sprite.svg#user"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="user-name">Anna Olynets</div>
+            <div>inna.ua@gmail.com</div>
+        </div>
+    </div>
+    <div class="mb-1 mt-3 ml-lg-1">Ваша реферальная ссылка:</div>
+    <div class="d-flex ref-link">
+        <input type="text" class="input-1"
+               id="ref-input"
+               value="http://high-risk.pro/?ref=EFESJ23P">
+        <button class="copy-ref">
+            <svg class="svgicon">
+                <use xlink:href="img/sprite.svg#i-copy"></use>
+            </svg>
+        </button>
+    </div>
+    <nav class="profile-menu flex-fill">
+        <a href="/profile.html" class="profile-menu-item">
+            <svg class="svgicon">
+                <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+            <span>Настройки профиля</span></a>
+        <a href="/my-applications.html" class="profile-menu-item">
+            <svg class="svgicon">
+                <use xlink:href="img/sprite.svg#document"></use>
+            </svg>
+            <span>Мои заявки</span></a>
+        <a href="/request-form.html" class="profile-menu-item">
+            <svg class="svgicon">
+                <use xlink:href="img/sprite.svg#document-plus"></use>
+            </svg>
+            <span>Создать заявку</span></a>
+    </nav>
+    <a href="#" class="profile-menu-item mb-n2">
+        <svg class="svgicon">
+            <use xlink:href="img/sprite.svg#exit"></use>
+        </svg>
+        Выйти</a>
+</div>
+
+            </div>
+            <div class="col-lg">
+                <div class="card-content">
+                    <div class="title-2 text-cyan mb-3">
+                        <svg class="svgicon">
+                            <use xlink:href="img/sprite.svg#document"></use>
+                        </svg>
+                        Заявка на подключение интернет магазина
+                    </div>
+
+                    <form id="request-form" class="step-1">
+                        <div class="progress">
+                            <div class="row no-gutters">
+                                <div class="col-3 progress__item">
+                                    <div>Интернет торговец</div>
+                                </div>
+                                <div class="col-3 progress__item">
+                                    <div>Деятельность компании</div>
+                                </div>
+                                <div class="col-3 progress__item">
+                                    <div>Финансовая информация</div>
+                                </div>
+                                <div class="col-3 progress__item">
+                                    <div>Сканы документов</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="req-form-1" class="form-step">
+                            <div class="row">
+    <div class="col-xl-6">
+        <div class="form-item">
+            <label>Названия компании</label>
+            <input type="text" class="form-input">
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="form-item">
+            <label>Страна регистрации</label>
+            <input type="text" class="form-input">
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="form-item">
+            <label>Юридический адрес</label>
+            <input type="text" class="form-input">
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="form-item">
+            <label>Регистрационный номер</label>
+            <input type="text" class="form-input">
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="form-item">
+            <label>Интернет сайт (ы)</label>
+            <div class="input-plus">
+                <input type="text" name="site" class="form-input">
+                <button type="button" class="add-field">+</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="form-item">
+            <label>Электронная почта</label>
+            <input type="email" class="form-input">
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="form-item">
+            <label>Телефон</label>
+            <input type="text" class="form-input">
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="form-item">
+            <label>Mcc codes</label>
+            <select class="select-1">
+                <option>Украина</option>
+                <option>Польша</option>
+                <option>Литва</option>
+                <option>Латвия</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="form-item">
+            <label>Skype</label>
+            <input type="text" class="form-input">
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <button type="button" class="button-3 px-5 mt-2 btn-change-step" data-stepid="2">Далее</button>
+</div>
+
+                        </div>
+                        <div id="req-form-2" class="form-step">
+                            <div class="mb-3">
+    <label for="desc" class="label-1">2.1 описание предлагаемьх товаров/услуг</label>
+    <textarea class="ta-1" id="desc"></textarea>
+</div>
+
+<div class="mb-3">
+    <label for="lic" class="label-1">2.2 необходимость/наличие лицензии (номер, дата и место выдачи, срок
+        действия)</label>
+    <textarea class="ta-1" id="lic"></textarea>
+</div>
+
+<div class="label-1 mb-3">2.3 В каких странах находятся ваши потенциальные клиенты (%)</div>
+
+<div class="row mb-4">
+    <div class="col-6 col-xl-3 mb-2">
+        <label class="checkbox-1">
+            <input type="checkbox" name="country" value="pribaltika">
+            <span>Прибалтика</span>
+        </label>
+    </div>
+    <div class="col-6 col-xl-3 mb-2">
+        <label class="checkbox-1">
+            <input type="checkbox" name="country" value="sng">
+            <span>Страны СНГ</span>
+        </label>
+    </div>
+    <div class="col-6 col-xl-3 mb-2">
+        <label class="checkbox-1">
+            <input type="checkbox" name="country" value="asia">
+            <span>Азия</span>
+        </label>
+    </div>
+    <div class="col-6 col-xl-3 mb-2">
+        <label class="checkbox-1">
+            <input type="checkbox" name="country" value="es">
+            <span>Страны ЕС</span>
+        </label>
+    </div>
+    <div class="col-6 col-xl-3 mb-2">
+        <label class="checkbox-1">
+            <input type="checkbox" name="country" value="usa">
+            <span>США и Канада</span>
+        </label>
+    </div>
+    <div class="col-6 col-xl-3 mb-2">
+        <label class="checkbox-1">
+            <input type="checkbox" name="country" value="russia">
+            <span>Россия</span>
+        </label>
+    </div>
+    <div class="col-6 col-xl-3 mb-2">
+        <label class="checkbox-1">
+            <input type="checkbox" name="country" value="other">
+            <span>Другое</span>
+        </label>
+    </div>
+</div>
+<div class="text-center">
+    <button type="button" class="button-2 mt-2 btn-change-step" data-stepid="1">Назад</button>
+    <button type="button" class="button-3 px-5 mt-2 btn-change-step" data-stepid="3">Далее</button>
+</div>
+
+                        </div>
+                        <div id="req-form-3" class="form-step">
+                            <p>Основная валюта оплаты</p>
+<div class="drop-right mb-3">
+    <div class="drop-right__current">
+        eur
+    </div>
+    <div class="drop-right__options">
+        <label>
+            eur
+            <input type="radio" name="currency" value="eur" checked>
+        </label>
+        <label>
+            usd
+            <input type="radio" name="currency" value="usd">
+        </label>
+        <label>
+            jpy
+            <input type="radio" name="currency" value="jpy">
+        </label>
+        <label>
+            uah
+            <input type="radio" name="currency" value="uah">
+        </label>
+        <label>
+            rub
+            <input type="radio" name="currency" value="rub">
+        </label>
+    </div>
+</div>
+<div class="table-responsive mb-3">
+    <table class="table-2">
+        <thead>
+        <tr>
+            <th style="width: 100%"></th>
+            <th>Существующий</th>
+            <th>Планируемый</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Оборот за месяц</td>
+            <td>1321</td>
+            <td>1501</td>
+        </tr>
+        <tr>
+            <td>Среднее количество операций за месяц</td>
+            <td>1321</td>
+            <td>1501</td>
+        </tr>
+        <tr>
+            <td>Средняя величина одной операции</td>
+            <td>1321</td>
+            <td>1501</td>
+        </tr>
+        <tr>
+            <td>Среднее количество операций за месяц</td>
+            <td>1321</td>
+            <td>1501</td>
+        </tr>
+        <tr>
+            <td>Средняя величина одной операции</td>
+            <td>1321</td>
+            <td>1501</td>
+        </tr>
+        <tr>
+            <td>Среднее количество операций за месяц</td>
+            <td>1321</td>
+            <td>1501</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="text-center">
+    <button type="button" class="button-2 mt-2 btn-change-step" data-stepid="2">Назад</button>
+    <button type="button" class="button-3 px-5 mt-2 btn-change-step" data-stepid="4">Далее</button>
+</div>
+
+                        </div>
+                        <div id="req-form-4" class="form-step">
+                            <div class="row my-7">
+    <div class="col-xl-6 mb-4">
+        <p>1. Свидетельство о регистрации компании</p>
+        <div class="upload-1">
+            <div class="upload-1__button">
+                <label for="file-1"></label>
+                <input type="file" id="file-1">
+                <button class="button-4">
+                    <svg class="svgicon mr-2">
+                        <use xlink:href="img/sprite.svg#upload"></use>
+                    </svg>Загрузить
+                </button>
+                <div class="filename">file.jpg</div>
+            </div>
+            <span class="upload-1__status danger" data-text="Файл загружен">Файл не загружен</span>
+        </div>
+    </div>
+    <div class="col-xl-6 mb-4">
+        <p>2. Cтатус компании</p>
+        <div class="upload-1">
+            <div class="upload-1__button">
+                <label for="file-2"></label>
+                <input type="file" id="file-2">
+                <button class="button-4">
+                    <svg class="svgicon mr-2">
+                        <use xlink:href="img/sprite.svg#upload"></use>
+                    </svg>Загрузить
+                </button>
+                <div class="filename">file.jpg</div>
+            </div>
+            <span class="upload-1__status danger" data-text="Файл загружен">Файл не загружен</span>
+        </div>
+    </div>
+    <div class="col-xl-6 mb-4">
+        <p>3. Протокол первого собрания.</p>
+        <div class="upload-1">
+            <div class="upload-1__button">
+                <label for="file-3"></label>
+                <input type="file" id="file-3">
+                <button class="button-4">
+                    <svg class="svgicon mr-2">
+                        <use xlink:href="img/sprite.svg#upload"></use>
+                    </svg>Загрузить
+                </button>
+                <div class="filename">file.jpg</div>
+            </div>
+            <span class="upload-1__status danger" data-text="Файл загружен">Файл не загружен</span>
+        </div>
+    </div>
+    <div class="col-xl-6 mb-4">
+        <p>4. Паспорта бенефициаров</p>
+        <div class="upload-1">
+            <div class="upload-1__button">
+                <label for="file-4"></label>
+                <input type="file" id="file-4">
+                <button class="button-4">
+                    <svg class="svgicon mr-2">
+                        <use xlink:href="img/sprite.svg#upload"></use>
+                    </svg>Загрузить
+                </button>
+                <div class="filename">file.jpg</div>
+            </div>
+            <span class="upload-1__status danger" data-text="Файл загружен">Файл не загружен</span>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <button type="button" class="button-2 mt-2 btn-change-step" data-stepid="3">Назад</button>
+    <button type="submit" class="button-3 px-5 mt-2">Отправить</button>
+</div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="footer-mini">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-sm-auto">
+                <div class="copyright">High-risk.pro © Все права защищены 2016</div>
+            </div>
+            <div class="col-sm-auto">
+                <div class="social-links">
+                    <a href="#">
+                        <svg class="svgicon">
+                            <use xlink:href="img/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="svgicon">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="svgicon">
+                            <use xlink:href="img/sprite.svg#g-plus"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/bundle.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+

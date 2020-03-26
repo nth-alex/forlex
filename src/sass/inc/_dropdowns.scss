@@ -1,0 +1,182 @@
+.select2-container--dd {
+    display: block;
+
+    &.select2-container--open {
+        .select2-selection--single {
+            background: #fff;
+            color: $cyan;
+            font-weight: 600;
+            position: relative;
+            z-index: 9999;
+            border: 1px solid $cyan;
+        }
+
+        .select2-selection--single .select2-selection__arrow b {
+            border-color: $cyan;
+            border-width: 2px;
+            transform: rotate(-135deg);
+        }
+    }
+
+    .select2-selection--single {
+        height: 43px;
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 27px !important;
+    }
+
+    .select2-selection--single .select2-selection__rendered {
+        line-height: 43px;
+        color: inherit;
+        padding-left: 20px;
+    }
+
+    .select2-selection--single .select2-selection__arrow {
+        position: absolute;
+        top: 0;
+        height: 43px;
+        right: 12px;
+        width: 20px;
+
+        b {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            display: block;
+            border-bottom: 2px solid #fff;
+            border-right: 2px solid #fff;
+            top: 15px;
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 66% 66%;
+            transition: all 0.15s ease-in-out;
+        }
+    }
+
+    .select2-dropdown {
+        margin-top: -22px;
+        padding-top: 30px;
+        padding-bottom: 8px;
+        border-bottom-right-radius: 17px;
+        border-bottom-left-radius: 17px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        border: none;
+    }
+
+    .select2-results__options {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    .select2-results__option {
+        color: $cyan;
+        padding: 8px 22px;
+        font-size: 16px;
+
+        &--highlighted {
+            background: rgba(0, 0, 0, .08);
+        }
+    }
+}
+
+.select2-container--drp {
+    display: block;
+    min-width: 80px;
+
+    &.select2-container--open {
+        .select2-selection--single {
+            position: relative;
+            z-index: 9999;
+            border: 1px solid $cyan;
+        }
+
+        .select2-selection--single .select2-selection__arrow b {
+            border-color: $cyan;
+            border-width: 2px;
+            transform: rotate(-135deg);
+        }
+    }
+
+    .select2-selection--single {
+        height: 50px;
+        color: #393939;
+        background-color: #ECF0EF;
+        border: 1px solid transparent;
+        border-radius: 5px !important;
+        transition: border-color .2s;
+
+        .select2-selection__rendered {
+            line-height: 50px;
+            color: inherit;
+            font-size: 16px;
+            font-weight: 600;
+            padding-left: 15px;
+            padding-right: 25px;
+        }
+
+        .select2-selection__arrow {
+            position: absolute;
+            top: 0;
+            height: 43px;
+            right: 6px;
+            width: 20px;
+
+            b {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                display: block;
+                border-bottom: 2px solid #888;
+                border-right: 2px solid #888;
+                top: 20px;
+                left: 0;
+                transform: rotate(45deg);
+                transform-origin: 66% 66%;
+                transition: all 0.15s ease-in-out;
+            }
+        }
+    }
+
+    .select2-dropdown {
+        padding: 8px 0;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: #ECF0EF;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+        border: none;
+    }
+
+    .select2-results__options {
+        max-height: 300px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            background-color: #ecf0ef;
+            width: 10px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #ecf0ef;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #babac0;
+            border-radius: 16px;
+            border: 2px solid #ecf0ef;
+        }
+
+        &::-webkit-scrollbar-button {
+            display: none;
+        }
+
+    }
+
+    .select2-results__option {
+        padding: 8px 22px;
+
+        &--highlighted {
+            background: rgba(0, 0, 0, .08);
+        }
+    }
+}

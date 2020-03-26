@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="228x228" href="img/favicons/coast-228x228.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <style media="screen">
+        .preload * {
+            transition: none !important
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>High Risk</title>
+    <!--[if lt IE 10]>
+    <script>
+        window.open('https://browser-update.org/uk/update-browser.html', '_self');
+    </script>
+    <![endif]-->
+</head>
+<body class="home">
+<header id="header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-auto mr-auto">
+                <a href="/" class="logo">
+                    <svg class="svgicon">
+                        <use xlink:href="img/sprite.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <nav class="col-auto d-none d-xl-block mr-3">
+                <ul class="row align-items-center">
+                    <li class="col-auto">
+                        <a href="#about" class="menu-item">О НАС</a>
+                    </li>
+                    <li class="col-auto">
+                        <a href="#home-services" class="menu-item">СЕРВИСЫ</a>
+                    </li>
+                    <li class="col-auto">
+                        <a href="#benefits" class="menu-item">ПРЕИМУЩЕСТВА</a>
+                    </li>
+                    <li class="col-auto">
+                        <a href="#worldmap" class="menu-item">ЮРИСДИКЦИИ</a>
+                    </li>
+                    <li class="col-auto">
+                        <a href="#footer" class="menu-item">КОНТАКТЫ</a>
+                    </li>
+                    <li class="col-auto">
+                        <a href="#" class="menu-item">ОСТАВИТЬ ЗАЯВКУ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-auto d-xl-none">
+                <button class="hamburger hamburger--spin" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+            </div>
+            <div class="col-auto d-none d-xl-block p-0">
+                <div class="dd">
+                    <div class="dd__current">RU
+                        <svg class="svgicon">
+                            <use xlink:href="img/sprite.svg#angle-down"></use>
+                        </svg>
+                    </div>
+                    <div class="dd__list">
+                        <a href="#">UK</a>
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-register" class="window-popup mfp-hide">
+    <div class="tabs">
+        <div class="d-flex mb-4">
+            <a href="#panel-user" class="tabs__tab tab-button-1 active">Зарегистрироваться пользователем</a>
+            <a href="#panel-partner" class="tabs__tab tab-button-1">Зарегистрироваться партнером</a>
+        </div>
+        <div class="tab-content active" id="panel-user">
+            <form class="empty-check">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 px-2 px-lg-4">
+                            <div class="form-item">
+                                <label>Имя</label>
+                                <input type="text" class="form-input">
+                            </div>
+                            <div class="form-item">
+                                <label>Пароль</label>
+                                <div class="password-item">
+                                    <input type="password" class="form-input">
+                                    <svg class="svgicon toggle-icon">
+                                        <use xlink:href="img/sprite.svg#eye-hide"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label>Повторите пароль</label>
+                                <div class="password-item">
+                                    <input type="password" class="form-input">
+                                    <svg class="svgicon toggle-icon">
+                                        <use xlink:href="img/sprite.svg#eye-hide"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 px-2 px-lg-4">
+                            <div class="form-item">
+                                <label>Дата рождения</label>
+<div class="row">
+    <div class="col-auto pr-0">
+        <select class="select-1" id="dummy-days"></select>
+        <script>
+            for (let i = 1; i <= 31; i++) {
+                let optionNode = document.createElement('option');
+                let textNode = document.createTextNode(''+i);
+                optionNode.appendChild(textNode);
+                document.getElementById('dummy-days').appendChild(optionNode);
+            }
+        </script>
+    </div>
+    <div class="col-auto pr-0">
+        <select class="select-1" id="dummy-months"></select>
+        <script>
+            for (let i = 1; i <= 12; i++) {
+                let optionNode = document.createElement('option');
+                let textNode = document.createTextNode(''+i);
+                optionNode.appendChild(textNode);
+                document.getElementById('dummy-months').appendChild(optionNode);
+            }
+        </script>
+    </div>
+    <div class="col-auto">
+        <select class="select-1 select-years" id="dummy-years"></select>
+        <script>
+            for (let i = 0; i < 100; i++) {
+                let optionNode = document.createElement('option');
+                let textNode = document.createTextNode(''+(new Date().getFullYear()-i));
+                optionNode.appendChild(textNode);
+                document.getElementById('dummy-years').appendChild(optionNode);
+            }
+        </script>
+    </div>
+</div>
+
+                            </div>
+                            <div class="form-item">
+                                <label>Ваш E-mail</label>
+                                <input type="email" class="form-input">
+                            </div>
+                            <div class="form-item">
+                                <label>Номер телефона</label>
+                                <input type="text" class="form-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="fz-16 text-cyan text-center">Вы можете войти через социальные сети:</p>
+                <div class="auth-social">
+    <a href="#" class="social-icon">
+        <svg class="svgicon">
+            <use xlink:href="img/sprite.svg#facebook"></use>
+        </svg>
+    </a>
+    <a href="#" class="social-icon">
+        <svg class="svgicon">
+            <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
+    </a>
+    <a href="#" class="social-icon">
+        <svg class="svgicon">
+            <use xlink:href="img/sprite.svg#g-plus"></use>
+        </svg>
+    </a>
+</div>
+
+                <div class="text-center">
+                    <button type="submit" disabled="disabled" class="button-3 mt-2">Зареєструватися
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="tab-content" id="panel-partner">
+            <form class="empty-check">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 px-2 px-lg-4">
+                            <div class="form-item">
+                                <label>E-mail</label>
+                                <input type="email" class="form-input">
+                            </div>
+                            <div class="form-item">
+                                <label>Пароль</label>
+                                <div class="password-item">
+                                    <input type="password" class="form-input">
+                                    <svg class="svgicon toggle-icon">
+                                        <use xlink:href="img/sprite.svg#eye-hide"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label>Повторите пароль</label>
+                                <div class="password-item">
+                                    <input type="password" class="form-input">
+                                    <svg class="svgicon toggle-icon">
+                                        <use xlink:href="img/sprite.svg#eye-hide"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label>Имя</label>
+                                <input type="text" class="form-input">
+                            </div>
+                        </div>
+                        <div class="col-md-6 px-2 px-lg-4">
+                            <div class="form-item">
+                                <label>Номер телефона</label>
+                                <input type="text" class="form-input">
+                            </div>
+                            <button type="button" class="button-4 button-code">Получить код</button>
+                            <p class="sms-warning">Для окончания регистрации вам нужно ввести код, высланный
+                                Вам на мобильный телефон</p>
+                            <div class="form-item">
+                                <label>Код</label>
+                                <input type="text" class="form-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" disabled="disabled" class="button-3 mt-2">Зареєструватися
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="modal-resend" class="window-popup mfp-hide">
+    <div class="text-center">
+        <div class="title-2 text-cyan mb-3">Востановить пароль</div>
+        <form class="empty-check">
+            <div class="form-item">
+                <label>Введите ваш email</label>
+                <input type="email" class="form-input">
+            </div>
+            <button type="submit" disabled="disabled" class="button-3 px-5 mt-3">Надіслати</button>
+        </form>
+    </div>
+</div>
+<div id="modal-login" class="mfp-hide">
+    <div class="row no-gutters">
+        <div class="col-lg-4 col-xl-auto">
+            <div class="login-screen-left">
+                <div class="auth-square"></div>
+                <img src="img/dots.png" alt="dots" class="f-dots">
+                <div class="m-auto pb-lg-7">
+                    <div class="title-5">Пройдіть авторизацію</div>
+                    <a href="#modal-register" class="button-1 open-modal">Зареєструватися</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-xl">
+            <div class="login-screen-right text-center">
+                <div class="m-auto">
+                    <p class="fz-16 text-cyan">Вы можете войти через социальные сети:</p>
+                    <div class="auth-social">
+    <a href="#" class="social-icon">
+        <svg class="svgicon">
+            <use xlink:href="img/sprite.svg#facebook"></use>
+        </svg>
+    </a>
+    <a href="#" class="social-icon">
+        <svg class="svgicon">
+            <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
+    </a>
+    <a href="#" class="social-icon">
+        <svg class="svgicon">
+            <use xlink:href="img/sprite.svg#g-plus"></use>
+        </svg>
+    </a>
+</div>
+
+                    <form action="/home-logged.html">
+                        <div class="form-item">
+                            <label>E-mail</label>
+                            <input type="email" class="form-input">
+                        </div>
+                        <div class="form-item">
+                            <label>Пароль</label>
+                            <input type="password" class="form-input">
+                        </div>
+                        <button class="button-3 px-4 mt-3">Авторизация</button>
+                    </form>
+                    <a href="#modal-resend" class="link-red open-modal">Забыли пароль?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+
+<section id="home-slider">
+    <div id="hero-slider">
+        <div class="hero-slider__slide">
+            <img src="img/slide-bg-1.svg" alt="slide-1-bg" class="slide-bg slide-bg--one">
+            <img src="img/slide-bg-2.svg" alt="slide-2-bg" class="slide-bg slide-bg--two">
+            <div class="slide-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="slide-text">
+                                <div class="slide-text__title">ХОЧЕШЬ КОМПАНИЮ<br/>В ВЕЛИКОБРИТАНИИ?</div>
+                                <ul class="list-1">
+                                    <li>Нет корпоративного налога</li>
+                                    <li>Регистрация за 1 день, счет за 3 дня</li>
+                                    <li>Минимальная годовая отчетность</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block slide-image">
+                            <img src="img/slide-planet.svg" alt="planet">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slider__slide">
+            <img src="img/slide-bg-1.svg" alt="slide-1-bg" class="slide-bg slide-bg--one">
+            <div class="slide-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="slide-text">
+                                <div class="slide-text__title">ХОЧЕШЬ РАЗОБРАТЬСЯ КАК РАБОТАТЬ С
+                                    КРИПТОВАЛЮТАМИ?
+                                </div>
+                                <ul class="list-1">
+                                    <li>Получим лицензию</li>
+                                    <li>Подберем технологическое решение</li>
+                                    <li>Откроем счет</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block slide-image">
+                            <img src="img/slide-calc.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slider__slide">
+            <img src="img/slide-bg-2.svg" alt="slide-2-bg" class="slide-bg slide-bg--two">
+            <div class="slide-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="slide-text">
+                                <div class="slide-text__title">Нужен<br/>мерчант-счет?</div>
+                                <ul class="list-1">
+                                    <li>Предложим банк/платежную систему</li>
+                                    <li>Подготовим документы</li>
+                                    <li>Поможем пройти комплаенс-контроль</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 d-none d-lg-block slide-image">
+                            <img src="img/slide-safe.svg" alt="" class="mt-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slider__slide">
+            <img src="img/slide-bg-1.svg" alt="slide-1-bg" class="slide-bg slide-bg--one">
+            <div class="slide-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="slide-text">
+                                <div class="slide-text__title">МЕЧТАЕШЬ О БИЗНЕСЕ В ИНТЕРНЕТЕ?</div>
+                                <ul class="list-1">
+                                    <li>Расскажем о простом старте</li>
+                                    <li>Обеспечим процессинг бизнес-платежей</li>
+                                    <li>Подключим программное обеспечение</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block slide-image">
+                            <img src="img/slide-cards.svg" alt="" class="mt-8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-controls">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <div class="slider-year">2020</div>
+                </div>
+                <div class="col-auto mx-auto">
+                    <div class="slider-dots"></div>
+                </div>
+                <div class="col-auto">
+                    <div class="slick-arrows"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="about" class="py-9">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8 text-center">
+                <div class="title-1 text-cyan mb-4">О нас</div>
+                <p>Международная финансово-юридическая компания Forlex LLP - крупнейший
+                    представитель рынка финтех в Европейском Союзе и странах постсоветского пространства.</p>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <img src="img/about-image.svg" alt="about">
+            </div>
+            <div class="col-md-5 text-center">
+                <p><b>Наша специализация</b> - комплексные услуги по открытию онлайн-бизнеса, в т.ч.
+                    юридический и
+                    налоговый консалтинг, регистрация компаний в различных юрисдикциях, открытие банковских
+                    счетов, сопровождение получения лицензий и других разрешительных документов, сопровождение
+                    подключения платежных решений для процессинга бизнес-платежей, в т.ч. в криптовалюте,
+                    предоставление необходимого программного обеспечения.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="home-services">
+    <div class="container">
+        <div class="title-1 text-cyan mb-9">Услуги</div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-4 text-center mb-5">
+                <div class="gradient-icon mb-3">
+                    <svg class="svgicon">
+                        <use xlink:href="img/sprite.svg#i-document"></use>
+                    </svg>
+                </div>
+                <div class="title-2 mb-2">Регистрация международных<br/>компаний</div>
+                <p>Легализация Вашего бизнеса: подберем оптимальную юрисдикцию, зарегистрируем компанию,
+                    обеспечим комплексное правовое сопровождение деятельности, в т.ч. лицензиро ...</p>
+            </div>
+            <div class="col-lg-4 text-center mb-5">
+                <div class="gradient-icon mb-3">
+                    <svg class="svgicon">
+                        <use xlink:href="img/sprite.svg#i-hand"></use>
+                    </svg>
+                </div>
+                <div class="title-2 mb-2">Открытие бизнес-счетов<br/> в зарубежных банках</div>
+                <p>Платежная система позволяет принимать платежи на сайтах и других интернет-проектах,
+                    используя различные методы оплаты, и получать гарантированные выплаты в любой точке
+                    мира.</p>
+            </div>
+            <div class="col-lg-4 text-center mb-5">
+                <div class="gradient-icon mb-3">
+                    <svg class="svgicon">
+                        <use xlink:href="img/sprite.svg#p-link"></use>
+                    </svg>
+                </div>
+                <div class="title-2 mb-2">Процессинг бизнес-платежей</div>
+                <p>Соответствие требованиям безопасности PCI DSS, широкий выбор способов оплаты и юрисди-
+                    кций, сотрудничество с проверенными банками и продвинутая система фрод-мониторинга гара
+                    ...</p>
+            </div>
+            <div class="col-lg-4 text-center mb-5">
+                <div class="gradient-icon mb-3">
+                    <svg class="svgicon">
+                        <use xlink:href="img/sprite.svg#i-shake"></use>
+                    </svg>
+                </div>
+                <div class="title-2 mb-2">Получение лицензий</div>
+                <p>Программа лояльности и выгодная система формирования тарифов для наших постоянных клиентов
+                    и аффилиатов, а также бонусная про- грамма при привлечении новых проектов.</p>
+            </div>
+            <div class="col-lg-4 text-center mb-5">
+                <div class="gradient-icon mb-3">
+                    <svg class="svgicon">
+                        <use xlink:href="img/sprite.svg#growth"></use>
+                    </svg>
+                </div>
+                <div class="title-2 mb-2">Консультирование по запуску интернет-бизнеса</div>
+                <p>Соответствие требованиям безопасности PCI DSS, широкий выбор способов оплаты и юрисди-
+                    кций, сотрудничество с проверенными банками и продвинутая система фрод-мониторинга гара
+                    ...</p>
+            </div>
+            <div class="col-lg-4 text-center mb-5">
+                <div class="gradient-icon mb-3">
+                    <svg class="svgicon">
+                        <use xlink:href="img/sprite.svg#i-chart"></use>
+                    </svg>
+                </div>
+                <div class="title-2 mb-2">Криптоконсалтинг</div>
+                <p>удобный интерфейс, доступ к транзакциям 24/7, возможность выставить счет для инвойса, про-
+                    зрачный отчет и статистика по транзакциям, а также персональный менеджер, который ...</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="benefits">
+    <div class="benefits-1">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-3">
+                    <div class="b-item-1">
+                        <div class="b-item-1__big">20+</div>
+                        <div class="b-item-1__text">юрисдикций</div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="b-item-1">
+                        <div class="b-item-1__big">24/7</div>
+                        <div class="b-item-1__text">на связи персональный<br/>менеджер</div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="b-item-1">
+                        <div class="b-item-1__big">20</div>
+                        <div class="b-item-1__text">Более 20 лет опыта</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="benefits-2">
+        <div class="container">
+            <div class="title-1 text-cyan mb-8">Преимущества</div>
+            <ul class="list-1">
+                <li>Храним конфиденциальность нашего клиента</li>
+                <li>Подбираем нестандартные решения для нестандартных ситуаций</li>
+                <li>Знаем все о новейших цифровых финансовых технологиях и решениях</li>
+                <li>Предоставляем пакетные услуги для IT-бизнеса (включая регистрацию, банковский счет и
+                    лицензии, платежные решения и софт)</li>
+                <li>Научим создавать бизнес в интернете с нуля и дадим все инструменты</li>
+                <li>Обладаем огромным опытом в обеспечении законного статуса рисковым бизнесам</li>
+                <li>Принимаем оплату фиатными деньгами и криптовалютой</li>
+                <li>Сотрудничаем с инновационными банками и финансовыми организациями со всего мира</li>
+                <li>Знаем, как получить необходимые лицензии для операций с криптовалютой</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+<div id="worldmap" class="py-9">
+    <div class="title-1 text-cyan mb-7">ЮРИСДИКЦИИ</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl">
+                <div id="map"></div>
+            </div>
+            <div class="col-xl-auto">
+                <div class="countries"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer id="footer">
+
+    <div class="container">
+        <div class="title-6 text-white">Контакты</div>
+        <form class="my-4">
+            <div class="call-me m-auto">
+                <input type="text" class="input-1 call-me__input" placeholder="+380 00 00 00 000">
+                <button class="call-me__button">Перезвоните мне!</button>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-auto m-auto">
+                <div class="d-flex f-contact">
+                    <a href="#" class="f-icon mr-2">
+                        <svg class="svgicon">
+                            <use xlink:href="img/sprite.svg#phone"></use>
+                        </svg>
+                    </a>
+                    <span class="f-contact__text">+ 44 (20) 380-88-132</span>
+                </div>
+                <div class="d-flex f-contact">
+                    <a href="#" class="f-icon mr-1">
+                        <svg class="svgicon">
+                            <use xlink:href="img/sprite.svg#msgr-4"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="f-icon mr-1">
+                        <svg class="svgicon">
+                            <use xlink:href="img/sprite.svg#msgr-3"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="f-icon mr-1">
+                        <svg class="svgicon">
+                            <use xlink:href="img/sprite.svg#msgr-2"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="f-icon mr-2">
+                        <svg class="svgicon">
+                            <use xlink:href="img/sprite.svg#msgr-1"></use>
+                        </svg>
+                    </a>
+                    <span class="f-contact__text">+ 38 068 688 51 44</span>
+                </div>
+                <div class="d-flex f-contact">
+                    <a href="#" class="f-icon mr-2">
+                        <svg class="svgicon">
+                            <use xlink:href="img/sprite.svg#envelope"></use>
+                        </svg>
+                    </a>
+                    <span class="f-contact__text">info@high-risk.pro</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="title-6 text-white mb-5">Оставить заявку</div>
+        <form class="f-form m-auto">
+            <div class="row">
+                <div class="col-md-6 mb-3 pr-lg-3">
+                    <input type="text" class="input-1" placeholder="+380 00 00 00 000">
+                </div>
+                <div class="col-md-6 mb-3 pl-lg-3">
+                    <select class="select-2">
+                        <option value="3">Удобный способ связи</option>
+                        <option value="1">Телефон</option>
+                        <option value="2">Telegram</option>
+                        <option value="4">Whatsapp</option>
+                        <option value="5">Viber</option>
+                    </select>
+                </div>
+                <div class="col-12 text-center">
+                    <button class="button-2">Оставить заявку</button>
+                </div>
+            </div>
+        </form>
+        <p class="m-0 mt-3 text-white text-center">Hight-Risk.pro Все права защищены 2016</p>
+    </div>
+</footer>
+<div class="call-pulse">
+    <button class="call-pulse__close">+</button>
+    <a href="#" class="call-button">
+        <svg class="svgicon">
+            <use xlink:href="img/sprite.svg#i-call"></use>
+        </svg>
+    </a>
+</div>
+<script src="js/bundle.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
