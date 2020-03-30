@@ -24,6 +24,7 @@
     <![endif]-->
 </head>
 <body class="home">
+@include('mobile-menu.html')
 <header id="header">
     <div class="container">
         <div class="row align-items-center">
@@ -33,7 +34,7 @@
                         <use xlink:href="img/sprite.svg#logo"></use>
                     </svg>
                 </a>
-                <!--                remove this script in production-->
+                <!-- remove this script in production-->
                 <script>
                     let logo = document.getElementsByClassName('logo');
                     logo[0].setAttribute('href', window.location.href);

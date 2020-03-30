@@ -24,7 +24,16 @@ $(document).ready(function () {
     });
 
     $('.hamburger').on('click', function () {
-        $(this).toggleClass('is-active');
+        $('body').addClass('menu-active');
+        $(this).addClass('is-active');
+    });
+    $('.mobile-menu-overlay').on('click', function () {
+        $('body').removeClass('menu-active');
+        $('.hamburger').removeClass('is-active');
+    });
+    $('.menu-item').on('click', function () {
+        $('.hamburger').removeClass('is-active');
+        $('body').removeClass('menu-active');
     });
 
     // insert span inside button form hover effect
