@@ -22,6 +22,15 @@
         window.open('https://browser-update.org/uk/update-browser.html', '_self');
     </script>
     <![endif]-->
+    <script>
+  var script = document.createElement('script');
+  script.src = 'https://cdn.nowdialogue.com/prod/build/bundle.js?t=2';
+  script.onload = function () {
+
+    DialogueAI.insertStoriesWidget('about', {uid: 748, wid: 2697, store_id: 642});
+  };
+  document.head.appendChild(script);
+</script>
 </head>
 <body class="home">
 <div class="mobile-menu-overlay"></div>
